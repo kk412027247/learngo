@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/loop.go" line="42" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5667f349-9d44-4e9c-85b2-19e1833a67c2" name="Default Changelist" comment="2-3">
-      <change afterPath="$PROJECT_DIR$/branch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5667f349-9d44-4e9c-85b2-19e1833a67c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/loop.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,26 +17,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="go" value="528" />
-          <entry key="txt" value="19" />
+          <entry key="go" value="948" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="1" />
-          <entry key="Go" value="528" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Go" value="948" />
+          <entry key="PLAIN_TEXT" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="1" />
+          <entry key="go" value="2" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="1" />
+          <entry key="Go" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -54,13 +56,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/branch.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+            <state relative-caret-position="522">
+              <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loop.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="44" column="52" lean-forward="true" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +100,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/abc.txt" />
         <option value="$PROJECT_DIR$/branch.go" />
+        <option value="$PROJECT_DIR$/loop.go" />
       </list>
     </option>
   </component>
@@ -139,18 +154,18 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="go build branch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build loop.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="awesomeProject" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/branch.go" />
+      <filePath value="$PROJECT_DIR$/loop.go" />
       <package value="awesomeProject" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build branch.go" />
+        <item itemvalue="Go Build.go build loop.go" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +179,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32976654" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32101166" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32101166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39980546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -181,13 +196,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="2-3" />
+    <MESSAGE value="2-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -201,19 +224,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/abc.txt">
+    <entry file="file://$PROJECT_DIR$/branch.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="522">
+          <caret line="34" column="75" lean-forward="true" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+          <folding>
+            <element signature="e#14#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/branch.go">
+    <entry file="file://$PROJECT_DIR$/loop.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+        <state relative-caret-position="528">
+          <caret line="44" column="52" lean-forward="true" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
           <folding>
-            <element signature="e#14#44#0" expanded="true" />
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
