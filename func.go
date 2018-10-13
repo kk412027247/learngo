@@ -7,6 +7,7 @@ import (
 	"runtime"
 )
 
+// go中函数传递参数 都是值传递
 func eval(a, b int, op string) (int, error) {
 	switch op {
 	case "+":
