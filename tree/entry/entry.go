@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/tree"
+	"learngo/tree"
 	"fmt"
 )
 
