@@ -1,16 +1,15 @@
 package main
 
 import (
-	"learngo/tree"
 	"fmt"
+	"learngo/tree"
 )
-
 
 type myTreeNode struct {
 	node *tree.Node
 }
 
-func (myNode *myTreeNode) posterOrder(){
+func (myNode *myTreeNode) posterOrder() {
 	if myNode == nil || myNode.node == nil {
 		return
 	}
@@ -21,7 +20,6 @@ func (myNode *myTreeNode) posterOrder(){
 
 	myNode.node.Print()
 }
-
 
 // main 函数是 程序的入口，包名和文件夹名不一定需要一致，如果一包中有main，文件夹下面只能有一个main的文件
 func main() {
@@ -38,4 +36,10 @@ func main() {
 	myRoot := myTreeNode{&root}
 	myRoot.posterOrder()
 	fmt.Println()
+
+	nodeCount := 0
+	root.TraverseFunc(func(node *tree.Node) {
+		nodeCount++
+	})
+	fmt.Println("Node count", nodeCount)
 }

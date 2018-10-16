@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-type Retriever interface{
+type Retriever interface {
 	Get(url string) string
 }
 
@@ -16,33 +16,44 @@ type Poster interface {
 	Post(url string, from map[string]string) string
 }
 
-const url =  "http://www.imooc.com"
+const url = "http://www.imooc.com"
 
-func download (r Retriever) string {
+func download(r Retriever) string {
 	return r.Get(url)
 }
 
-
-func post (poster Poster) {
-	poster.Post(url,map[string]string{
-		"name":"ccmouse",
-		"course":"golang",
+func post(poster Poster) {
+	poster.Post(url, map[string]string{
+		"name":   "ccmouse",
+		"course": "golang",
 	})
 }
-
 
 type RetrieverPoster interface {
 	Retriever
 	Poster
 }
 
+func session(s RetrieverPoster) string {
 
-func session (s RetrieverPoster) string {
-
-	s.Post(url,map[string]string{
-		"Contents":"another fake imooc.com",
+	s.Post(url, map[string]string{
+		"Contents": "another fake imooc.com",
 	})
 	return s.Get(url)
+}
+
+func inspect(r Retriever) {
+	// 这里的r之所以能打印出字符串，是因为Retriever 实现了string方法
+	fmt.Println("Inspecting", r)
+	fmt.Printf("> %T %v\n", r, r)
+	fmt.Print("> Type switch")
+	switch v := r.(type) {
+	case *mock.Retriever:
+		fmt.Println("Contents: ", v.Contents)
+	case *real.Retriever:
+		fmt.Println("UserAgent: ", v.UserAgent)
+	}
+	fmt.Println()
 }
 
 func main() {
@@ -54,8 +65,8 @@ func main() {
 	r = &retriever
 	inspect(r)
 	r = &real.Retriever{
-		UserAgent:"Mozilla/5.0",
-		TimeOut: time.Minute,
+		UserAgent: "Mozilla/5.0",
+		TimeOut:   time.Minute,
 	}
 
 	inspect(r)
@@ -68,20 +79,8 @@ func main() {
 		fmt.Println("can not ge the assertion")
 	}
 
-
-
-	//fmt.Println(download(r))
+	fmt.Println(download(r))
 	fmt.Println("try a session")
 
 	fmt.Println(session(&retriever))
-}
-
-func inspect(r Retriever) {
-	fmt.Printf("%T %v\n", r, r)
-	switch v := r.(type) {
-	case *mock.Retriever:
-		fmt.Println("Contents: ", v.Contents)
-	case *real.Retriever:
-		fmt.Println("UserAgent: ", v.UserAgent)
-	}
 }
