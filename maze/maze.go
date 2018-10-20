@@ -45,7 +45,7 @@ func (p point) at(grid [][]int) (int, bool) {
 		return 0, false
 	}
 
-	if p.j < 0 || p.j >= len(grid[p.j]) {
+	if p.j < 0 || p.j >= len(grid[p.i]) {
 		return 0, false
 	}
 
@@ -77,7 +77,7 @@ func walk(maze [][]int, start point, end point) [][]int {
 			}
 
 			val, ok = next.at(steps)
-			if !ok || val == 0 {
+			if !ok || val != 0 {
 				continue
 			}
 
@@ -104,7 +104,7 @@ func main() {
 
 	for _, row := range steps {
 		for _, val := range row {
-			fmt.Printf("%d ", val)
+			fmt.Printf("%3d", val)
 		}
 		fmt.Println()
 	}
