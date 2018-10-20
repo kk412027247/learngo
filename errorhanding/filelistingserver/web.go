@@ -6,6 +6,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	// 加了下面这行就可以动态
+	_ "net/http/pprof"
 )
 
 type appHandler func(writer http.ResponseWriter, request *http.Request) error

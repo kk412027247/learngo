@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	time "time"
+	"time"
 )
 
 func generator() chan int {
@@ -23,7 +23,7 @@ func generator() chan int {
 func worker(id int, c chan int) {
 	// range 是等c传完之后，直接读这个数据,当 close 关闭channel时候使用
 	for n := range c {
-		//time.Sleep(time.Second)
+		time.Sleep(time.Second)
 		fmt.Printf("worker %d receiveed %d\n", id, n)
 	}
 
@@ -52,6 +52,7 @@ func main() {
 			activeWorker = worker
 			activeValue = values[0]
 		}
+		// channel 的条件选择可以用select, go都是通过这种方式进行同步的
 		select {
 		case n := <-c1:
 			values = append(values, n)
