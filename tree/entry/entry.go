@@ -42,4 +42,14 @@ func main() {
 		nodeCount++
 	})
 	fmt.Println("Node count", nodeCount)
+
+	// channel 是类似于数组这么个东西？抑或是一组可共享的数据？类似于数组结构，可供遍历
+	c := root.TraverseWithChannel()
+	maxNode := 0
+	for node := range c {
+		if node.Value > maxNode {
+			maxNode = node.Value
+		}
+	}
+	fmt.Println("max node value: ", maxNode)
 }

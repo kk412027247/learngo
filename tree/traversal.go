@@ -1,6 +1,8 @@
 package tree
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 可以有两个重复的包名, 实质上是在同一个文件，只是拆开来些而已。
 func (node *Node) Traverse() {
@@ -17,4 +19,16 @@ func (node *Node) TraverseFunc(f func(*Node)) {
 	node.Left.TraverseFunc(f)
 	f(node)
 	node.Right.TraverseFunc(f)
+}
+
+func (node *Node) TraverseWithChannel() chan *Node {
+	out := make(chan *Node)
+	go func() {
+		node.TraverseFunc(func(node *Node) {
+			out <- node
+		})
+		close(out)
+	}()
+
+	return out
 }
