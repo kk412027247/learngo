@@ -14,7 +14,7 @@ type Matcher interface {
 func Match(matcher Matcher, feed *Feed, searchTerm string, results chan<- *Result){
 	searchResult, err := matcher.Search(feed, searchTerm)
 	if err != nil {
-		log.Println(err)
+		log.Println("搜索出错了",err)
 		return
 	}
 
@@ -25,6 +25,6 @@ func Match(matcher Matcher, feed *Feed, searchTerm string, results chan<- *Resul
 
 func Display(results chan *Result){
 	for result := range results {
-		log.Printf("%s:\n%s\n\n",result.Field, result.Content)
+		log.Printf("搜索结果 %s:\n%s\n\n",result.Field, result.Content)
 	}
 }

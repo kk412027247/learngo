@@ -18,7 +18,7 @@ type (
 		Description string `xml:"description"`
 		Link string `xml:"link"`
 		GUID string `xml:"guid"`
-		GeoRssPoint string `xml:"georess:point"`
+		GeoRssPoint string `xml:"georss:point"`
 	}
 
 	image struct {
@@ -31,11 +31,11 @@ type (
 	channel struct {
 		XMLName xml.Name `xml:"channel"`
 		Title string `xml:"title"`
-		Description string `xml:"link"`
+		Description string `xml:"description"`
 		Link string `xml:"link"`
 		PubDate string `xml:"pubDate"`
 		LastBuildDate string `xml:"lastBuildDate"`
-		TTL string `xml:"language"`
+		TTL string `xml:"ttl"`
 		Language string `xml:"language"`
 		ManagingEditor string `xml:"managingEditor"`
 		WebMaster string `xml:"webMaster"`
@@ -101,7 +101,7 @@ func (m rssMatcher) Search(feed *search.Feed, searchTerm string) ([]*search.Resu
 
 func (m rssMatcher) retrieve(feed *search.Feed)(*rssDocument, error) {
 	if feed.URI == ""{
-		return nil, errors.New("No rss feed uri provided")
+		return nil, errors.New("URI 地址为空 ,No rss feed uri provided")
 	}
 
 	resp, err := http.Get(feed.URI)
@@ -112,7 +112,7 @@ func (m rssMatcher) retrieve(feed *search.Feed)(*rssDocument, error) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		return nil, fmt.Errorf("http response error %d\n", resp.StatusCode)
+		return nil, fmt.Errorf("请求返回出错了 http response error %d\n", resp.StatusCode)
 	}
 
 	var document rssDocument
