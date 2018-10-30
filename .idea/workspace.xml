@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5667f349-9d44-4e9c-85b2-19e1833a67c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/array/array.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/hello.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/interface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/type/type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package/listing11/listing11.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package/log/package.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -68,44 +66,44 @@
     <session id="100565361">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="18451" />
+          <entry key="go" value="19306" />
           <entry key="in" value="67" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="18451" />
+          <entry key="Go" value="19306" />
           <entry key="PLAIN_TEXT" value="81" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="67" />
+          <entry key="go" value="73" />
           <entry key="in" value="1" />
           <entry key="js" value="3" />
           <entry key="json" value="2" />
           <entry key="md" value="1" />
           <entry key="out" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="67" />
+          <entry key="Go" value="73" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -118,24 +116,15 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/interface.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../golang.org/x/tour/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="294">
-                <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/package/listing11/listing11.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="15" selection-end-line="31" />
+              <folding>
+                <element signature="e#14#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tree/entry.go" />
-        <option value="$PROJECT_DIR$/tree/node.go" />
         <option value="$PROJECT_DIR$/queue/entry/main.go" />
         <option value="$PROJECT_DIR$/queue/queue.go" />
         <option value="$PROJECT_DIR$/basic/func/func.go" />
@@ -222,6 +209,8 @@
         <option value="$PROJECT_DIR$/array/array.go" />
         <option value="$PROJECT_DIR$/type/type.go" />
         <option value="$PROJECT_DIR$/interface/interface.go" />
+        <option value="$PROJECT_DIR$/package/package.go" />
+        <option value="$PROJECT_DIR$/package/listing11/listing11.go" />
       </list>
     </option>
   </component>
@@ -237,10 +226,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="343" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="570" />
     <option name="y" value="22" />
-    <option name="width" value="1360" />
+    <option name="width" value="1093" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -271,12 +260,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngo" type="462c0819:PsiDirectoryNode" />
+              <item name="package" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="learngo" type="b2602c69:ProjectViewProjectNode" />
@@ -290,7 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,11 +296,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/channel/done" />
-      <recent name="$PROJECT_DIR$/abc" />
-      <recent name="$PROJECT_DIR$/basic/branch" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/maze" />
       <recent name="$PROJECT_DIR$/container/nonrepeating" />
@@ -314,119 +303,12 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/container" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/map/map.go</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/slice/slice.go</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/package/log" />
+      <recent name="$PROJECT_DIR$/channel/done" />
+      <recent name="$PROJECT_DIR$/abc" />
+      <recent name="$PROJECT_DIR$/basic/branch" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -440,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build interface.go">
+  <component name="RunManager" selected="Go Build.go build listing11.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -460,15 +342,6 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build hello.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learngo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/hello/hello.go" />
-      <package value="awesomeProject" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build interface.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -478,11 +351,20 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build listing11.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learngo" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/rss/main.go" />
+      <filePath value="$PROJECT_DIR$/package/listing11/listing11.go" />
+      <package value="awesomeProject" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build package.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learngo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/package/package.go" />
       <package value="awesomeProject" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -508,19 +390,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Build.go build hello.go" />
       <item itemvalue="Go Build.go build array.go" />
       <item itemvalue="Go Build.go build type.go" />
       <item itemvalue="Go Build.go build interface.go" />
+      <item itemvalue="Go Build.go build package.go" />
+      <item itemvalue="Go Build.go build listing11.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build listing11.go" />
+        <item itemvalue="Go Build.go build package.go" />
         <item itemvalue="Go Build.go build interface.go" />
         <item itemvalue="Go Build.go build type.go" />
         <item itemvalue="Go Build.go build array.go" />
-        <item itemvalue="Go Build.go build hello.go" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -557,22 +439,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="570" y="22" width="1093" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12083333" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18572736" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32976654" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2835821" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2833002" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39980546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32976654" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2517413" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.35685885" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32976654" />
       <window_info anchor="bottom" id="Quokka" order="12" weight="0.32976654" />
@@ -657,51 +539,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="12-2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functional/fb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functional/fib/fib.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fib.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/go/src/os/file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="273" column="56" selection-start-line="273" selection-start-column="11" selection-end-line="273" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errorhanding/defer/defer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1925">
-          <caret line="1745" selection-start-line="1745" selection-end-line="1745" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errorhanding/recover/recover.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/errorhanding/filelistingserver/filelisting/handler.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -903,9 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#16#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,9 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="e#14#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -993,6 +821,48 @@
             <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/runner.go" />
+    <entry file="file://$PROJECT_DIR$/package/package.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/log/package.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/log/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fib.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/listing11/listing11.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="15" selection-end-line="31" />
+          <folding>
+            <element signature="e#14#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
