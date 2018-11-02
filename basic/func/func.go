@@ -58,7 +58,15 @@ func _swap(a, b *int) {
 	*a, *b = *b, *a
 }
 
+func some(num ...int) {
+	for _, v := range num {
+		fmt.Println(v)
+	}
+}
+
 func main() {
+
+	some(1, 2, 3, 4, 5, 5, 5, 5, 5, 5, 1)
 
 	if result, err := eval(1, 2, "x"); err != nil {
 		fmt.Println("Error:", err)

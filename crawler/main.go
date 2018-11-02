@@ -1,29 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"io/ioutil"
-	"net/http"
+	"learngo/crawler/engine"
+	"learngo/crawler/zhenai/paser"
 )
 
 func main() {
-	resp, err := http.Get("http://www.zhenai.com/zhenghun/")
-	if err != nil {
-		panic(err)
-	}
-
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		fmt.Println("Error: status code", resp.StatusCode)
-		return
-	}
-
-	all, err := ioutil.ReadAll(resp.Body)
-
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("%s\n", all)
-
+	engine.Run(engine.Request{
+		Url:        "http://www.zhenai.com/zhenghun/",
+		ParserFunc: paser.ParseCityList,
+	})
 }
